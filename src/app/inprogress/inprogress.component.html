@@ -1,0 +1,9 @@
+<div class="card"  *ngFor="let data of taskdata">
+   
+  <div class="card-body" *ngIf="data.status=='inprogres'" >
+    <h4> {{data.status}}</h4>
+    <h5 class="card-title"> {{ data.title }}</h5>
+    <p class="card-text">{{data.description}}</p>
+    <a class="btn btn-primary">{{data.date }} <span>   </span> {{data.time}}</a>  
+  </div>
+</div>
